@@ -20,9 +20,9 @@ OTHER DEALINGS IN THE SOFTWARE.
 */
 session_start();
 define ('DBPATH','localhost');
-define ('DBUSER','root');
-define ('DBPASS','qazqaz');
-define ('DBNAME','socialEnergy');
+define ('DBUSER','');
+define ('DBPASS','');
+define ('DBNAME','');
 
 
 

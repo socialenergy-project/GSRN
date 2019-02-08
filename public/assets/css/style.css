@@ -1,0 +1,255 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 23, 2018, 3:38:21 PM
+    Author     : John Papagiannis <intelen>
+*/
+
+.sizelett{
+    
+ font-size: 14px;   
+    
+}
+
+.sizelett_2{
+    
+    font-size: 12px;  
+    
+}
+
+.wrapper_1 {
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  float:left;
+}
+.wrapper_1:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapper_1 .container_1 {
+  width: 100%;
+  height: 100%;
+}
+.top_1 {
+   /* 
+  height: 80%;
+  width: 100%;
+  background: url(http://localhost/dashboard2/CodeIgniter/upload/index3.png ) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  */
+}
+.wrapper_1 .container_1 .bottom_1 {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+.wrapper_1 .container_1 .bottom_1.clicked {
+  transform: translateX(-50%);
+}
+.wrapper_1 .container_1 .bottom_1 h1 {
+  margin: 0;
+  padding: 0;
+}
+.wrapper_1 .container_1 .bottom_1 p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 .details_1 {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 .buy_1 {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 .buy_1 i {
+  font-size: 30px;
+  padding: 30px;
+  color: #254053;
+  transition: transform 0.5s;
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 .buy_1:hover {
+  background: #A6CDDE;
+}
+.wrapper_1 .container_1 .bottom_1 .left_1 .buy_1:hover i {
+  transform: translateY(5px);
+  color: #00394B;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 {
+  width: 50%;
+  background: #A6CDDE;
+  color: white;
+  float: right;
+  height: 200%;
+  overflow: hidden;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .details_1 {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .done_1 {
+  width: calc(30% - 2px);
+  float: left;
+  transition: transform 0.5s;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .done_1 i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .remove_1 {
+  width: calc(30% - 1px);
+  clear: both;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  height: 50%;
+  background: #BC3B59;
+  transition: transform 0.5s, background 0.5s;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .remove_1:hover {
+  background: #9B2847;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .remove_1:hover i {
+  transform: translateY(5px);
+}
+.wrapper_1 .container_1 .bottom_1 .right_1 .remove_1 i {
+  transition: transform 0.5s;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+.wrapper_1 .container_1 .bottom_1 .right_1:hover .remove_1, .wrapper_1 .container_1 .bottom_1 .right_1:hover .done_1 {
+  transform: translateY(-100%);
+}
+.wrapper_1 .inside_1 {
+  z-index: 9;
+  background: #92879B;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+.wrapper_1 .inside_1 .icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+.wrapper_1 .inside_1:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 80%;
+}
+.wrapper_1 .inside_1:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.wrapper_1 .inside_1:hover .contents_1 {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.wrapper_1 .inside_1 .contents_1 {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.wrapper_1 .inside_1 .contents_1 table {
+  text-align: left;
+  width: 100%;
+}
+.wrapper_1 .inside_1 .contents_1 h1, .wrapper_1 .inside_1 .contents_1 p, .wrapper_1 .inside_1 .contents_1 table {
+  color: white;
+}
+.wrapper_1 .inside_1 .contents_1 p {
+  font-size: 13px;
+}
+
+
+
+
+
+.ddiv {
+  width: 900px;
+  margin: 0 auto;
+  overflow: auto;
+}
+ 
+ul {
+  list-style-type: none;
+}
+ 
+li img {
+  float: left;
+  margin: 10px;
+  border: 5px solid #fff;
+ 
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+ 
+li img:hover {
+  -webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+}
+
+
+
+
+.wrapperX {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.boxX {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  width: 350px;
+}
